@@ -1,0 +1,199 @@
+/* NAVIGATOR--------------NAVIGATOR--------------NAVIGATOR   */
+.About1 {
+  color: blue;
+}
+.navigator {
+  background-color: #ffffffea;
+  position: fixed;
+  width: 98vw;
+  height: 20vh;
+  top: 0;
+  z-index: 1; /* Ensure it stays on top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navigator .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigator h2 {
+  font-size: 40px;
+  margin: 10px;
+  padding: 0;
+}
+.navigator span {
+  font-size: 25px;
+  margin: 10px;
+  padding: 0;
+}
+.navigator img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: black solid 3px;
+  margin: 0px; /* Remove any margin */
+}
+.navb a {
+  margin: 50px 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  height: 100%;
+  margin-right: 30px;
+}
+.navb a:hover {
+  color: red;
+  text-decoration: underline;
+  transition: color 0.5s, text-decoration 0.5s;
+}
+.navb .Resume1 {
+  color: blue;
+}
+.tita {
+  text-decoration: none;
+  color: black;
+}
+
+/* RContent--------------RContent--------------RContent */
+#RContent {
+  width: 98vw;
+  height: 50vh;
+  margin-top: 20vh;
+  
+}
+#RContent div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+  border: 1px solid black;
+  margin: 30px 5px;
+  padding-top: 20px;
+  flex-direction: column;
+  background: linear-gradient(45deg, #ffffff, #dacdcd);
+}
+#RContent h2 {
+  
+  font-size: 40px;
+  margin: 10px;
+  padding: 0; 
+}
+#RContent p {
+  font-size: 20px;
+  margin: 10px;
+  padding: 3px;
+  word-spacing: 2px;
+}
+#RContent div i {
+  font-size: 40px;
+  color: red;
+  display: flex;
+  align-items: center;
+}
+#RContent img {
+  width: 300px;
+  height: 200px;
+  border-radius: 30px;
+  border: black solid 3px;
+}
+.showbar {
+  display:none;
+}
+/* MEDIAS--------------MEDIAS--------------MEDIAS */
+/* MAX-WIDTH-480px--------------MAX-WIDTH480px--------------MAX-WIDTH-480px */
+@media only screen and (max-width: 480px) {
+  .showbar {
+    position: absolute;
+    display: block;
+    margin: 10px;
+    top: 0;
+  }
+  .show:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.5s;
+  }
+  .show hr {
+    width: 20px;
+  }
+  #menu {
+    background-color: #f8eeeeea;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+    display: none;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .navigator {
+    display: none;
+  }
+  #menu a {
+    z-index: 2;
+    gap: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px;
+  }
+  #menu a:hover {
+    color: blue;
+    text-decoration: underline;
+    transition: color 0.5s, text-decoration 0.5s;
+  } 
+  .showbar {
+    display: block;
+  }
+  #RContent {
+    margin-top: 10vh;
+  }
+  #RContent h2{
+    font-size: 30px;
+    margin:0;
+  }
+  #RContent img {
+    padding:0;
+    width:300px;
+    height:20px;
+  }
+  body {
+    background-color: #f8eeeeea;
+  }
+  ul { 
+    display:none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #menu {
+    display: none; /* 初始隱藏導航內容 */
+  }
+}
+/* MEDIA 480 END--------------MEDIA 480 END -------------- MEDIA 480 END */
+/* MEDIA 481+ & -1280 --------------MEDIA 481+ & -1280 -------------- MEDIA 481+ & -1280 */
+@media only screen and (min-width:481px) and (max-width:1279px) {
+  .navb {
+    width:200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:100px;
+
+  }
+  .navb a{
+    font-size: 15px;
+  }
+  .showbar {
+    display:none;
+  }
+  ul {
+    display:none;
+  }
+}

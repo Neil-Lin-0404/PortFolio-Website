@@ -1,0 +1,253 @@
+body {
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
+  grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+  margin: 0;
+}
+/* LEFT--------------LEFT--------------LEFT */
+.left-section {
+  background-color: #f8eeee;
+  grid-column: 1 / 5;
+  grid-row: 1 / 11;
+}
+/* RIIGHT--------------RIGHT--------------RIGHT */
+.right-section {
+  background-color: #fffcfc;
+  grid-column: 5 / 11;
+  grid-row: 1 / 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.right-section p {
+  font-size: 20px;
+  margin: 10px;
+  padding: 0;
+}
+#abbut button {
+  gap: 30px;
+  width: 100px;
+  border-radius: 20px;
+  margin: 20px;
+  height: 30px;
+  text-align: center;
+  
+}
+#abbut a {
+  text-decoration: none;
+}
+#first {
+  background-color: white;
+  border: 1px solid blue;
+  font-size: 20px;
+}
+#first a {
+  color:black;
+}
+#second a {
+  text-decoration: none;
+  color:white;
+}
+#second {
+  background-color: black;
+  border:1px solid yellow;
+  font-size: 20px;
+}
+#second a:hover , #second:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+#first:hover , #first a:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+/* NAVIGATOR--------------NAVIGATOR--------------NAVIGATOR */
+.tita {
+  text-decoration: none;
+  color: black;
+}
+.ylwsquare {
+  width:30px;
+  height:30px;
+  background-color: blue;
+  border:1px solid black;
+}
+.About1 {
+  color: blue;
+}
+.navigator {
+  background-color: #ffffffea;
+  position: fixed;
+  width: 100vw;
+  height: 20vh;
+  top: 0;
+  z-index: 1; /* Ensure it stays on top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navigator .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigator h2 {
+  font-size: 40px;
+  margin: 10px;
+  padding: 0;
+}
+.navigator span {
+  font-size: 25px;
+  margin: 10px;
+  padding: 0;
+}
+.navigator img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: black solid 3px;
+  margin: 0px; /* Remove any margin */
+}
+.navb a {
+  margin: 50px 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  height: 100%;
+  margin-right: 30px;
+}
+.navb a:hover {
+  color: blue;
+  text-decoration: underline;
+  transition: color 0.5s, text-decoration 0.5s;
+}
+.navb .About1 {
+  color: blue;
+}
+/* CARD--------------CARD--------------CARD */
+.card {
+  background-color: #ffffffea;
+  border-radius: 10px;
+  border: 1px solid black;
+  grid-column: 4 / 6;
+  grid-row: 5 / 9;
+  padding: 20px;
+  margin: 20px;
+  z-index: 1;
+  text-align: center;
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+/* OTHERS--------------OTHERS--------------OTHERS */
+.showbar {
+  display:none;
+}
+
+
+/* MEDIAS--------------MEDIAS--------------MEDIAS */
+/* MAX-WIDTH-480px--------------MAX-WIDTH480px--------------MAX-WIDTH-480px */
+@media only screen and (max-width: 480px) {
+  .showbar {
+    position: absolute;
+    display: block;
+    margin: 10px;
+  }
+  .show:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.5s;
+  }
+  .show hr {
+    width: 20px;
+  }
+  #menu {
+    background-color: #f8eeeeea;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+    display: none;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .navigator {
+    display: none;
+  }
+  #menu a {
+    z-index: 2;
+    gap: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px;
+  }
+  #menu a:hover {
+    color: blue;
+    text-decoration: underline;
+    transition: color 0.5s, text-decoration 0.5s;
+  } 
+
+  .left-section {
+    grid-column: 1 / 11;
+    grid-row: 1 / 6;
+  }
+  .right-section {
+    grid-column: 1 / 11;
+    grid-row: 6 / 11;
+    text-align: center;
+    margin-top: auto;
+  }
+  .right-section h2 {
+    display: none;
+  }
+  .right-section h2 {
+    z-index: 2;
+  }
+  .card {
+    grid-column: 1 / 11;
+    grid-row: 3 / 8;
+  }
+  .showbar {
+    display: block;
+  }
+} 
+@media only screen and (max-width: 480px) {
+  #menu {
+    display: none; /* 初始隱藏導航內容 */
+  }
+}
+@media only screen and (min-width: 470px )and (max-width: 480px) {
+  .card {
+    grid-column: 3 / 9;
+    grid-row: 3 / 8;
+  }
+}
+/* MEDIA 480 END--------------MEDIA 480 END -------------- MEDIA 480 END */
+/* MEDIA 481+ & -1280 --------------MEDIA 481+ & -1280 -------------- MEDIA 481+ & -1280 */
+@media only screen and (min-width: 481px) and (max-width: 1450px) {
+  .left-section {
+    grid-column: 1 / 6;
+    grid-row: 1 / 11;
+  }
+  .right-section {
+    grid-column: 6 / 11;
+    grid-row: 1 / 11;
+  }
+  .card {
+    grid-column: 1 / 5;
+    grid-row: 4 / 9;
+  }
+}
+/* MEDIA 481+ & -1280 END--------------MEDIA 481+ & -1280 END -------------- MEDIA 481+ & -1280 END */
