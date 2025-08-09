@@ -1,4 +1,4 @@
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1100px) and (min-height: 900px) {
   @keyframes SunLight-Falling {
     0% {
       background: linear-gradient(
@@ -44,10 +44,10 @@
   }
   #Side-Bar {
     margin: 0;
-    margin-left: 20px;  
+    margin-left: 20px;
     margin-top: 10px;
     width: 350px;
-    height: 98vh;
+    height: 100vh;
     border: 1px solid black;
     border-radius: 10px;
     background-color: lightskyblue;
@@ -74,7 +74,7 @@
   #Navigator {
     margin-top: 300px;
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     justify-content: center;
     display: flex;
   }
@@ -104,7 +104,7 @@
     padding: 20px 0;
     text-decoration: none;
     width: 100%;
-    height: 30%;
+    height: 35%;
     box-sizing: border-box;
   }
 
@@ -128,10 +128,18 @@
     display: flex;
     justify-content: center;
   }
-  #Main-Area h1
-  {
+  #Main-Area h1 {
     font-size: 35px;
   }
+  p,
+  li {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.897);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
 }
+
+
 
 
