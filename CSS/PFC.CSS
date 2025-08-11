@@ -1,0 +1,22 @@
+#Main-Area
+{
+    display: block;
+    margin-left: 30px;
+}
+.Box
+{
+    margin-top: 30px;
+}
+#Discord,#Instagram,#Email
+{
+    display:flex;
+    flex-direction: row;
+}
+#Discord p,#Instagram p,#Email p
+{
+    margin:10px;
+}
+.Box img
+{
+    border-radius: 30px;
+}

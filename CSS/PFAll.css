@@ -1,0 +1,141 @@
+@media only screen and (min-width: 1100px) and (min-height: 900px) {
+  @keyframes SunLight-Falling {
+    0% {
+      background: linear-gradient(
+        90deg,
+        #fffbe6 0%,
+        #fffbe6 40%,
+        lightskyblue 100%
+      );
+    }
+    30% {
+      background: linear-gradient(
+        90deg,
+        lightskyblue 0%,
+        #fffbe6 40%,
+        #fffbe6 60%,
+        lightskyblue 100%
+      );
+    }
+    60% {
+      background: linear-gradient(
+        90deg,
+        lightskyblue 0%,
+        #fffbe6 60%,
+        #fffbe6 80%,
+        lightskyblue 100%
+      );
+    }
+    90% {
+      background: linear-gradient(90deg, lightskyblue 0%, #fffbe6 100%);
+    }
+    100% {
+      background: linear-gradient(45deg, lightskyblue, #fffbe6);
+    }
+  }
+  body {
+    background: linear-gradient(45deg, rgb(131, 249, 253), rgb(66, 184, 214));
+  }
+  body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    min-height: 100vh;
+  }
+  #Side-Bar {
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 350px;
+    height: 100vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  #Side-Bar #Logo {
+    margin-top: 40px;
+    width: 250px;
+    height: 250px;
+    border: 2px black solid;
+    border-radius: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+  #Logo img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  #Navigator {
+    margin-top: 300px;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    display: flex;
+  }
+  #Navigator ul li {
+    margin-right: 30px;
+    margin-bottom: 50px;
+    width: 300px;
+    text-align: center;
+    padding: 0;
+    border: none;
+    background: none;
+  }
+  #Navigator ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 20px;
+  }
+  #Navigator ul li a {
+    display: block;
+    font-size: 30px;
+    color: darkblue;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: linear-gradient(45deg, rgb(248, 248, 196), lightskyblue);
+    cursor: pointer;
+    transition: 1s;
+    padding: 20px 0;
+    text-decoration: none;
+    width: 100%;
+    height: 35%;
+    box-sizing: border-box;
+  }
+
+  #Navigator ul li a:hover,
+  #Navigator ul li a:active {
+    animation-name: SunLight-Falling;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    box-shadow: 0 0 0 4px #87cefa;
+    outline: 2px solid #4682b4;
+  }
+  #Main-Area {
+    flex: 1 1 0%;
+    min-width: 0;
+    min-height: 98vh;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+  }
+  #Main-Area h1 {
+    font-size: 35px;
+  }
+  p,
+  li {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.897);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}

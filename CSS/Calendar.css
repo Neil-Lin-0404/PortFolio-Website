@@ -1,0 +1,187 @@
+/* 將Area 讓東西都在中間 */
+#Main-Area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 調calendar的大局東西 */
+#Calendar {
+  width: 800px;
+  height: 500px;
+
+  border: 10px solid burlywood;
+  background-color: whitesmoke;
+  border-radius: 30px;
+}
+#Calendar hr {
+  margin-top: 50px;
+}
+/* hr以上的calendar微調 */
+#UpperCalendar {
+  height: 80px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+#Year {
+  font-size: 20px;
+}
+#Month {
+  font-size: 30px;
+}
+/* hr 以下的calendar微調 */
+#LowerCalendar {
+  height: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#ShowDays
+{
+  width:85%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin-left: 1px;
+  margin-right: 10px;
+  align-items: center;
+  height:10%;
+}
+#Icons
+{
+  width:97%;
+  height: 80%;
+  border:3px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.Lines
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.DayIcon
+{
+  margin:10px;
+  margin-right: 30px;
+  margin-left: 25px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 30px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.DayIcon:hover
+{
+  cursor: pointer;
+}
+/* calendar以外的東西 */
+#LowerPart {
+  display: flex;
+}
+/* 統計的地方 */
+#Statistics {
+  border: 1px solid black;
+  width: 200px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #bbffffda;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+#Open-Shop {
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 180px;
+  height: 50px;
+  background-color: lightblue;
+}
+#Open-Shop:hover {
+  background-color: rgb(248, 97, 97);
+  color: black;
+  cursor: pointer;
+}
+#Open-Shop:active {
+  background-color: lightgreen;
+  transform: scale(1.01);
+}
+/* 任務的地方 */
+#AddTask {
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 30px;
+}
+#AddTaskBtn {
+  width: 100px;
+  height: 55px;
+  background-color: rgb(1, 196, 1);
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+#AddTaskBtn:active {
+  background-color: rgb(1, 153, 1);
+}
+#TasksArea {
+  display: flex;
+  flex-direction: column;
+}
+.Tasks {
+  width: 500px;
+  margin-left: 30px;
+  height: 75px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 2px solid lightyellow;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.completeBtn {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  background-color: lightskyblue;
+  cursor: pointer;
+}
+.TaskName
+{
+    margin: auto;
+}
+.deleteBtn {
+  margin-left: 55%;
+  background-color: rgb(253, 35, 35);
+  color: white;
+  border: 1px solid salmon;
+  height: 50px;
+  width: 75px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  font-family:'Times New Roman', Times, serif;
+  cursor: pointer;
+}
+.deleteBtn:active
+{
+  background-color: rgba(255, 0, 0, 0.76);
+}
+.CompletedTasks
+{
+  text-decoration: line-through;
+}

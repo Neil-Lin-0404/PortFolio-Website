@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neil's PortFolio Website-Calendar</title>
+    <link rel="icon" href="../images/SheepLogo.ico" />
+    <link rel="stylesheet" href="../CSS/PFAll.css" />
+    <link rel="stylesheet" href="../CSS/Calendar.css" />
+  </head>
+  <body>
+    <aside id="Side-Bar">
+      <div id="Logo">
+        <a href="../index.htm"><img src="../images/SheepLogo.ico" /></a>
+        <hr />
+      </div>
+      <nav id="Navigator">
+        <ul>
+          <li><a href="../index.htm">Home</a></li>
+          <li><a href="./Resume.htm">Resume</a></li>
+          <li><a href="./Projects.htm">Projects</a></li>
+          <li><a href="./Contact.htm">Contact</a></li>
+          <li><a href="./Calendar.html">Calendar</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main id="Main-Area">
+      <article id="Content">
+        <section id="Calendar">
+          <div id="UpperCalendar">
+            <div id="Display-Year">
+              <p id="Year">TempYear</p>
+            </div>
+            <div id="Display-Month">
+              <p id="Month">TempMonth</p>
+            </div>
+          </div>
+          <hr />
+          <div id="LowerCalendar">
+            <div id="ShowDays">
+              <p>Sun</p>
+              <p>Mon</p>
+              <p>Tue</p>
+              <p>Wed</p>
+              <p>Thu</p>
+              <p>Fri</p>
+              <p>Sat</p>
+            </div>
+            <div id="Icons">
+              
+            </div>
+          </div>
+        </section>
+        <section id="LowerPart">
+          <div id="Statistics">
+            <p id="Total-Days">
+              Total-Days: <span id="Total-Days-Show">0</span>
+            </p>
+            <p id="Task-Complete-Days">
+              Complete Days: <span id="Task-Complete-Days-Show">0</span>
+            </p>
+            <p id="Streak">Streaks: <span id="Streak-Show">0</span></p>
+            <p id="Total-Hours">
+              Total-Hours: <span id="Total-Hours-Show">0</span>
+            </p>
+            <p id="Points">Points: <span id="Points-Show">0</span></p>
+            <p id="Points-Spent">
+              Spent-Points: <span id="Points-Spent-Show">0</span>
+            </p>
+            <button id="Open-Shop" onclick="Open()">Open Shop</button>
+          </div>
+          <div id="TasksArea">
+            <div id="upperTask">
+              <input id="AddTask" placeholder="Task to Do" />
+              <button onclick="SubmitTask()" id="AddTaskBtn">Add</button>
+            </div>
+            <div id="lowerTask"></div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer id="Bottom"></footer>
+  </body>
+</html>
