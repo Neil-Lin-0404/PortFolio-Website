@@ -12,10 +12,9 @@
   flex-direction: column;
   text-align: center;
 }
-.box:hover
-{
-  cursor:pointer;
-  transform:scale(1.05);
+.box:hover {
+  cursor: pointer;
+  transform: scale(1.05);
   transform-origin: center;
   transition: 0.5s;
 }
@@ -35,8 +34,7 @@
   border-radius: 30px;
   height: 90%;
 }
-.box a
-{
-  text-decoration: none;  
-  color:black;
+.box a {
+  text-decoration: none;
+  color: black;
 }
