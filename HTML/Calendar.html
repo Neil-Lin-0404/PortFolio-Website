@@ -29,13 +29,18 @@
         <section id="Calendar">
           <div id="UpperCalendar">
             <div id="Display-Year">
-              <p id="Year">TempYear</p>
+              <button id="Prev-Year" onclick="PrevYear()"><</button>
+              <p id="Year">2025</p>
+              <button id="Next-Year" onclick="NextYear()">></button>
             </div>
             <div id="Display-Month">
-              <p id="Month">TempMonth</p>
+              <button id="Prev-Month" onclick="PrevMonth()"><</button>
+              <hr id="hr-Left">
+              <p id="Month">August</p>
+              <hr id="hr-Right">
+              <button id="Next-Month" onclick="NextMonth()">></button>
             </div>
           </div>
-          <hr />
           <div id="LowerCalendar">
             <div id="ShowDays">
               <p>Sun</p>
@@ -52,20 +57,15 @@
         <section id="LowerPart">
           <div id="Statistics">
             <p id="Total-Days">
-              Total-Days: <span id="Total-Days-Show">0</span>
+              Total-Days: <br /><span id="Total-Days-Show">0</span>
             </p>
             <p id="Task-Complete-Days">
-              Complete Days: <span id="Task-Complete-Days-Show">0</span>
+              Completed Days: <br /><span id="Task-Complete-Days-Show">0</span>
             </p>
-            <p id="Streak">Streaks: <span id="Streak-Show">0</span></p>
+            <p id="Streak">Streaks: <br /><span id="Streak-Show">0</span></p>
             <p id="Total-Hours">
-              Total-Hours: <span id="Total-Hours-Show">0</span>
+              Total-Hours: <br /><span id="Total-Hours-Show">0</span>
             </p>
-            <p id="Points">Points: <span id="Points-Show">0</span></p>
-            <p id="Points-Spent">
-              Spent-Points: <span id="Points-Spent-Show">0</span>
-            </p>
-            <button id="Open-Shop" onclick="Open()">Open Shop</button>
           </div>
           <div id="TasksArea">
             <div id="upperTask">
@@ -73,15 +73,16 @@
               <button onclick="SubmitTask()" id="AddTaskBtn">Add</button>
             </div>
             <div id="lowerTask">
-
+              <div class="Tasks">
+                <button class="completeBtn"></button>
+                <p class="TaskName">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                <button class="deleteBtn"></button>
+              </div>
             </div>
           </div>
         </section>
       </article>
     </main>
-    <section id="Shop">
-      
-    </section>
     <footer id="Bottom"></footer>
     <script src="../JS/PF.js"></script>
   </body>

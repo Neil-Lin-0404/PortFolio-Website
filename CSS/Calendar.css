@@ -16,24 +16,76 @@
 #Calendar hr {
   margin-top: 50px;
 }
-/* hr以上的calendar微調 */
+/* uppercalendar微調 */
 #UpperCalendar {
-  height: 80px;
+  height: 50px;
   display: flex;
   text-align: center;
+  justify-content: space-evenly;
   flex-direction: column;
+  margin-bottom: 80px;
+}
+#Display-Year {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 #Year {
+  font-size: 15px;
+}
+#Display-Prev-Next
+{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#Prev-Month, #Next-Month  {
+  width: 50px;
+  background-color: transparent;
+  border: 0;
+  height: 30px;
   font-size: 20px;
+  cursor: pointer;
+}
+#Prev-Year, #Next-Year
+{
+width: 50px;
+  background-color: transparent;
+  border: 0;
+  height: 30px;
+  font-size: 17px;
+  cursor: pointer;
+}
+#Prev-Month:hover, #Next-Month:hover, #Prev-Year:hover, #Next-Year:hover {
+  background-color: lightgray;
+  border-radius: 10px;
 }
 #Month {
   font-size: 30px;
+}
+#Display-Month {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+#Display-Month hr{
+  width: 35%;
+  border: 1px solid black;
+  opacity: 0.3;
+  margin: 0;
 }
 /* hr 以下的calendar微調 */
 #LowerCalendar {
   height: 370px;
   display: flex;
   align-items: center;
+  margin-bottom: 2px;
+  margin-top: auto;
   justify-content: center;
   flex-direction: column;
 }
@@ -95,22 +147,9 @@
   border-radius: 30px;
   margin-top: 10px;
 }
-
-#Open-Shop {
-  border: 2px solid black;
-  border-radius: 30px;
-  width: 180px;
-  height: 50px;
-  background-color: lightblue;
-}
-#Open-Shop:hover {
-  background-color: rgb(248, 97, 97);
-  color: black;
-  cursor: pointer;
-}
-#Open-Shop:active {
-  background-color: lightgreen;
-  transform: scale(1.01);
+#Statistics p {
+  margin: 25px;
+  font-size: 25px;
 }
 /* 任務的地方 */
 #AddTask {
@@ -147,19 +186,21 @@
   display: flex;
   align-items: center;
   text-align: center;
+  overflow: auto;
 }
 .completeBtn {
   width: 30px;
   height: 30px;
-  margin: auto;
+  margin-left: 10px;
   background-color: lightskyblue;
   cursor: pointer;
 }
 .TaskName {
   margin: auto;
+  margin-left: 20px;
 }
 .deleteBtn {
-  margin-left: 55%;
+  margin-left: auto;
   background-color: rgb(253, 35, 35);
   color: white;
   border: 1px solid salmon;
